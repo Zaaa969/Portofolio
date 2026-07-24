@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Finza</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ========== SCROLL PROGRESS BAR ========== -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- ========== PARTICLES BACKGROUND ========== -->
+    <div id="particles-container"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-bracket">&lt;</span>Zaaa<span class="logo-bracket"
+          >/&gt;</span
+        >
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link active"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link"
+              ><i class="fas fa-user"></i> About</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="nav-link"
+              ><i class="fas fa-code"></i> Skills</a
+            >
+          </li>
+          <li>
+            <a href="#hobi" class="nav-link"
+              ><i class="fas fa-heart"></i> Hobi</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Zaaa969" target="_blank" class="nav-link">
+              <i class="fab fa-github"></i> Projects
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="modeToggle" aria-label="Ganti Tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="about" class="hero">
+      <div class="hero-image">
+        <img
+          src="WhatsApp Image 2026-07-23 at 09.21.45.jpeg"
+          alt="Foto Finza"
+        />
+      </div>
+      <div class="hero-text">
+        <p class="eyebrow">Front-end developer in training</p>
+        <h1>Halo Saya <span class="highlight">Finza</span></h1>
+        <p class="subtitle">
+          Siswa smk yang lagi belajar merakit halaman web mulai dari 0, mulai
+          dari HTML, CSS, hingga JS
+        </p>
+
+        <!-- ===== SOCIAL MEDIA LINKS ===== -->
+        <div class="social-links">
+          <a href="https://github.com/Zaaa969" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://instagram.com/szaazaaa_" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://tiktok.com/@zaajupiter" target="_blank" class="social-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+
+        <a href="https://github.com/Zaaa969" target="_blank" class="btn-primary">
+          <i class="fab fa-github"></i> Lihat Projek
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== STATISTIK COUNTER ========== -->
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Proyek Selesai</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Skill Dipelajari</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="6">0</span>
+          <span class="stat-label">Repo GitHub</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Contribusi GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="skill-section">
+      <p class="eyebrow">⚡ Skill</p>
+      <h2>Tool yang saya lagi pelajari</h2>
+
+      <!-- ===== SKILL FILTER ===== -->
+      <div class="skill-filters">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+      </div>
+
+      <div class="skill-grid">
+        <!-- Skill HTML -->
+        <div class="skill-card skill-html" data-category="frontend">
+          <span class="skill-tag">#tag</span>
+          <h3>HTML</h3>
+          <p>Menyusun struktur dan konten Halaman</p>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 85%;">
+              <span class="skill-progress-text">85%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill CSS -->
+        <div class="skill-card skill-css" data-category="frontend">
+          <span class="skill-tag">#style</span>
+          <h3>CSS</h3>
+          <p>Mendesain tampilan agar enak dilihat</p>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 75%;">
+              <span class="skill-progress-text">75%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill JavaScript -->
+        <div class="skill-card skill-js" data-category="frontend">
+          <span class="skill-tag">#script</span>
+          <h3>JavaScript</h3>
+          <p>bikin halaman bisa merespon aksi user</p>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 60%;">
+              <span class="skill-progress-text">60%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill PHP -->
+        <div class="skill-card skill-php" data-category="backend">
+          <span class="skill-tag">#php</span>
+          <h3>PHP</h3>
+          <p>Backend development & database</p>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 50%;">
+              <span class="skill-progress-text">50%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Git -->
+        <div class="skill-card skill-git" data-category="tools">
+          <span class="skill-tag">#git</span>
+          <h3>Git & GitHub</h3>
+          <p>Version control & kolaborasi</p>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 65%;">
+              <span class="skill-progress-text">65%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HOBI SECTION ========== -->
+    <section id="hobi" class="hobi-section">
+      <p class="eyebrow">💫 Hobi</p>
+      <h2>Hal yang saya sukai di waktu luang</h2>
+      <div class="hobi-grid">
+        <div class="hobi-card">
+          <div class="hobi-emoji">🎵</div>
+          <h3>Musik</h3>
+          <p>Mendengarkan lagu, bermain alat musik, dan menikmati harmoni</p>
+          <span class="hobi-tag">#nada</span>
+          <span class="hobi-tag">#irama</span>
+        </div>
+        <div class="hobi-card">
+          <div class="hobi-emoji">🎮</div>
+          <h3>Game</h3>
+          <p>Eksplorasi dunia virtual, strategi, dan tantangan seru</p>
+          <span class="hobi-tag">#petualangan</span>
+          <span class="hobi-tag">#kompetisi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BACK TO TOP BUTTON ========== -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========== STIKER KARAKTER ========== -->
+    <div class="stiker-container" id="stiker">
+      <div class="stiker">
+        <div class="hand-wave">👋</div>
+        <div class="face">
+          <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+          <div class="mouth"></div>
+        </div>
+        <div class="speech-bubble" id="bubble">Halo! 👋</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
